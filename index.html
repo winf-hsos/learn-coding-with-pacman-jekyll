@@ -1,0 +1,17 @@
+---
+layout: default
+type: index
+title: Programmieren lernen mit Pacman
+---
+<h2>Lektionen</h2>
+
+<div class="list-group">
+    {% assign sites_sorted = site.pages | sort: "path" %}
+    {% for ex in sites_sorted %}
+        {% if ex.path contains 'lessons' %}
+            {% if ex.path contains 'index' %}
+                <a href="{{ ex.path }}" class="list-group-item list-group-item-action">{{ ex.title }}</a>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
