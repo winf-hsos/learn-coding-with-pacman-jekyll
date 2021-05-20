@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nicolasmeseth
 github_username:  winf-hsos
+github_url: https://github.com/winf-hsos/learn-coding-with-pacman/blob/main
 
 # Build settings
 #theme: minima
@@ -46,6 +47,8 @@ exclude:
 #   - gemfiles/
     - Gemfile
     - Gemfile.lock
+    - copy_and_commit.bat
+    - feed.xml
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/

@@ -38,7 +38,7 @@ function draw() {
     background("#000000");
 
     // Wir setzen die Farbe auf Gelb
-    let yellow = color("yellow");
+    let yellow = color("#FFFF00");
 
     // Setze die Füllung auf die eben definierte Farbe Gelb
     fill(yellow);
@@ -99,4 +99,6 @@ function keyPressed() {
             pacmanDirection = "up";
             break;
     }
+
+    return false;
 }
